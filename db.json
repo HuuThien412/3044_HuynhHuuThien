@@ -1,0 +1,60 @@
+{
+  "$schema": "./node_modules/json-server/schema.json",
+  "posts": [
+    {
+      "id": "1",
+      "title": "a title",
+      "views": 100,
+      "isDeleted": true
+    },
+    {
+      "id": "2",
+      "title": "another title",
+      "views": 200,
+      "isDeleted": true
+    },
+    {
+      "id": "3",
+      "title": "",
+      "views": "",
+      "isDeleted": true
+    },
+    {
+      "id": "sấ",
+      "title": "",
+      "views": ""
+    },
+    {
+      "id": "oooo",
+      "title": "ooo",
+      "views": "9999"
+    },
+    {
+      "id": "adad",
+      "title": "adad",
+      "views": "â"
+    }
+  ],
+  "comments": [
+    {
+      "id": "1",
+      "text": "a comment about post 1",
+      "postId": "1",
+      "isDeleted": true
+    },
+    {
+      "id": "2",
+      "text": "another comment about post 1",
+      "postId": "1",
+      "isDeleted": true
+    },
+    {
+      "id": "3",
+      "text": "",
+      "postId": ""
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

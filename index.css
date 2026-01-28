@@ -1,0 +1,118 @@
+body {
+  font-family: "Segoe UI", Tahoma, sans-serif;
+  background: #f1f5f9;
+  margin: 0;
+  padding: 32px;
+  color: #334155;
+}
+
+/* Heading */
+h2 {
+  margin: 32px 0 12px;
+  font-size: 20px;
+  font-weight: 600;
+  color: #1e293b;
+}
+
+/* Layout spacing */
+div {
+  margin-bottom: 24px;
+}
+
+/* Table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #ffffff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.06);
+}
+
+thead {
+  background: #6366f1;
+  color: #ffffff;
+}
+
+th,
+td {
+  padding: 14px 18px;
+  font-size: 14px;
+}
+
+th {
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 0.06em;
+  font-weight: 600;
+}
+
+tbody tr {
+  transition: background 0.2s ease;
+}
+
+tbody tr:nth-child(even) {
+  background: #f8fafc;
+}
+
+tbody tr:hover {
+  background: #eef2ff;
+}
+
+/* Soft delete */
+.deleted {
+  text-decoration: line-through;
+  color: #94a3b8;
+  background: #f1f5f9 !important;
+}
+
+/* Form */
+input[type="text"] {
+  padding: 10px 14px;
+  border: 1px solid #cbd5f5;
+  border-radius: 8px;
+  outline: none;
+  width: 190px;
+  font-size: 14px;
+  transition: 0.2s;
+}
+
+input[type="text"]::placeholder {
+  color: #94a3b8;
+}
+
+input[type="text"]:focus {
+  border-color: #6366f1;
+  background: #ffffff;
+  box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.15);
+}
+
+/* Button */
+input[type="submit"] {
+  padding: 10px 22px;
+  background: #6366f1;
+  color: #ffffff;
+  border: none;
+  border-radius: 999px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  transition: 0.25s ease;
+}
+
+input[type="submit"]:hover {
+  background: #4f46e5;
+  transform: translateY(-1px);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  input[type="text"] {
+    width: 100%;
+    margin-bottom: 12px;
+  }
+
+  input[type="submit"] {
+    width: 100%;
+  }
+}
